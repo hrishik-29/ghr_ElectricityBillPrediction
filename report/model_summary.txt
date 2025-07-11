@@ -1,0 +1,25 @@
+Model Summary
+-------------
+
+Models Tried:
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+
+Evaluation Metrics:
+- RMSE and R² were used to evaluate performance.
+- Random Forest showed the best performance with the lowest RMSE and highest R² score.
+
+Assumptions & Notes:
+- Missing values were checked and handled,Reductant columns were removed.
+- Categorical features were encoded using OneHotEncoder.
+- Used a RandomForest with simplified parameters.
+- Hyperparameter tuning was done using GridSearchCV, but was not implemented in the notebook because of time constraint and code is commented out.
+
+Final Model:
+- Random Forest Regressor with nearly best parameters.
+- n_estimators=100,
+- max_depth=20,
+- min_samples_leaf=1
+- RMSE : 5.355097450479262
+- R2 score : 0.9999748318494079
